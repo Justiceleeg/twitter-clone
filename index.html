@@ -19,7 +19,7 @@
 
 					<!-- STEP 2: When the user clicks on the textarea, the textarea should double in size and the character count and Tweet buttons should be revealed. -->
 					<!-- HINT: jQuery ".on" eventHandler -->
-					<textarea class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
+					<input type="textarea" class="tweet-compose" maxlength="500" placeholder="Compose new Tweet..."/>
 
 					<!-- STEP 1: Initially, the Tweet button and the character count button below should be hidden. -->
 					<!-- HINT: Use CSS -->
@@ -31,7 +31,7 @@
 
 						<!-- STEP 4: If the user puts in more than 140 characters, the tweet button should be disabled (and re-enabled when there are <= 140 chars) -->
 						<!-- HINT: javascript length method -->
-						<button class="button" id="tweet-submit">Tweet</button>
+						<button class="button" id="tweet-submit" disabled="true">Tweet</button>
 					</div>
 				</div>
 			</div>
@@ -91,7 +91,7 @@
 							</div>
 							<div class="reply">
 								<img class="avatar" src="img/alagoon.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
+								<input type="text-area" class="tweet-compose" placeholder="Reply to @mybff"/>
 							</div>
 						</div>
 					</div><!-- .tweet -->
@@ -131,7 +131,7 @@
 							</div>
 							<div class="reply">
 								<img class="avatar" src="img/alagoon.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @theonion"/></textarea>
+								<input type="text-area" class="tweet-compose" placeholder="Reply to @theonion"/>
 							</div>
 						</div>
 					</div><!-- .tweet -->
@@ -171,12 +171,15 @@
 							</div>
 							<div class="reply">
 								<img class="avatar" src="img/alagoon.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @HarvardBiz"/></textarea>
+								<input type="text-area" class="tweet-compose" placeholder="Reply to @HarvardBiz"/>
 							</div>
 						</div>
 					</div><!-- .tweet -->
 				</div><!-- #stream -->
 			</div><!-- #main -->
 		</div><!-- #page-container -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.4/jquery.timeago.js"></script>
+		<script src="./js/jquery-2.0.3.min.js"></script>
+		<script src="./js/animations.js"></script>
 	</body>
 </html>
